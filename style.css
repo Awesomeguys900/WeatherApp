@@ -1,3 +1,5 @@
+/* header styles */
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -19,4 +21,49 @@
   justify-content: flex-end;
 }
 
-/* header styles */
+/* weatherContainer */
+
+.weatherContainer {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.weatherDataExpanded {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dailyWeatherContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.weatherDataExpanded {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  width: 100%;
+  padding: 20px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+  .weatherDataExpanded {
+    grid-template-columns: 1fr; /* Stacks the grid items into one column on small screens */
+  }
+}

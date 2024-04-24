@@ -22,6 +22,60 @@
       </div>
     </div>
 
+    <main class="weatherContainer">
+      <section class="LocationData">
+        <div class="cityCountry">Sydney, Australia</div>
+        <div class="date">Tuesday 23 April 2024 | 9:26 PM</div>
+      </section>
+      <div class="dailyWeatherContainer">
+        <section class="weatherDataSimple">
+          <div class="weatherIcon">Icon</div>
+          <div class="temperature">25°C</div>
+          <div class="weatherDescription">Clear Sky</div>
+          <div class="extraInfo">Feels like 19C, moderate breeze</div>
+        </section>
+
+        <section class="weatherDataExpanded">
+          <!-- Wind Speed -->
+          <div class="details">
+            <div class="detailsTitle">Wind</div>
+            <div class="detailsData" id="windSpeed">7m/s</div>
+          </div>
+
+          <!-- Humidity -->
+          <div class="details">
+            <div class="detailsTitle">Humidity</div>
+            <div class="detailsData" id="humidity">77%</div>
+          </div>
+
+          <!-- Visibility -->
+          <div class="details">
+            <div class="detailsTitle">Visibility</div>
+            <div class="detailsData" id="visibility">10km</div>
+          </div>
+
+          <!-- Cloudiness -->
+          <div class="details">
+            <div class="detailsTitle">Cloudiness</div>
+            <div class="detailsData" id="cloudiness">0%</div>
+          </div>
+
+          <!-- Sunrise Time -->
+          <div class="details">
+            <div class="detailsTitle">Sunrise</div>
+            <div class="detailsData" id="sunrise">06:23</div>
+          </div>
+
+          <!-- Sunset Time -->
+          <div class="details">
+            <div class="detailsTitle">Sunset</div>
+            <div class="detailsData" id="sunset">17:23</div>
+          </div>
+        </section>
+      </div>
+      <section class="weatherDataWeekly"></section>
+    </main>
+
     <script src="script.js" async defer></script>
   </body>
 </html>
